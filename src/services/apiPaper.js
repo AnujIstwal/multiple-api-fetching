@@ -2,7 +2,7 @@ import axios from "axios";
 
 export async function getPapers(query) {
     try {
-        const res = await axios.get("http://localhost:5000/api/scholar", {
+        const res = await axios.get("https://temp-proxy-server.vercel.app/api/scholar", {
             params: { q: query },
         });
 
